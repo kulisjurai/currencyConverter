@@ -19,7 +19,7 @@ function insertValutesInSelect(_data) {
 btn.addEventListener('click', function() {
     let amount = document.getElementById('amount').value;
     if (!amount) amount = 0;
-
+    if (typeof(amount) != Number) amount = 0;
     const currency1 = select[0].value;
     const currency2 = select[1].value;
     convert(currency1, currency2, amount);

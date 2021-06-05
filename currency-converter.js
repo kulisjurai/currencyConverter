@@ -11,16 +11,15 @@ fetch('https://api.exchangerate.host/latest?fbclid=IwAR37ezqZVImhicqIFpnxj-y-wP0
 function insertValutesInSelect(_data) {
     const entries = Object.keys(_data.rates);
     for (let i = 0; i < entries.length; i++) {
-        select[0].innerHTML += `<option value="${entries[i]}">${entries[i]}</option>`
-        select[1].innerHTML += `<option value="${entries[i]}">${entries[i]}</option>`
+        select[0].innerHTML += `<option value="${entries[i]}">${entries[i]}</option>`;
+        select[1].innerHTML += `<option value="${entries[i]}">${entries[i]}</option>`;
     }
 }
 
 btn.addEventListener('click', function() {
     let amount = document.getElementById('amount').value;
-    if (!amount) {
-        amount = 0
-    }
+    if (!amount) amount = 0;
+
     const currency1 = select[0].value;
     const currency2 = select[1].value;
     convert(currency1, currency2, amount);

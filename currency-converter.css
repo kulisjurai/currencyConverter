@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 50vh;
+    width: 100vw;
+    position: relative;
+}
+
+.parent-div {
+    padding: 0 35px 0 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 180px auto;
+    height: 200px;
+    width: 59%;
+    border-radius: 20px;
+    background: #dbdbdb;
+    box-shadow: 20px 20px 60px #9c9c9c, -20px -20px 60px #ffffff;
+}
+
+.form-div {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+select {
+    width: 200px;
+    height: 28px;
+}
+
+input {
+    margin: 25px;
+    padding-left: 5px;
+}
+
+.button-div {
+    padding-right: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#output {
+    font-size: 50px;
+    width: 100px;
+    height: 30px;
+    margin: auto;
+    position: relative;
+    top: 120px
+}
